@@ -1,3 +1,16 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all bots to access everything
 User-agent: *
 Disallow:
+
+# Block admin folder
+User-agent: *
+Disallow: /admin/
+
+# Block specific page
+Disallow: /secret-page
+
+# Allow only one folder
+Allow: /public-data/
+
+# Sitemap location
+Sitemap: http://localhost:3002/sitemap.xml
