@@ -12,7 +12,7 @@ const FAQs = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getfaq");
+      const response = await axios.get("https://api.gradeup01.in/api/getfaq");
       if (response.data.length > 0) {
         setmainheading(response.data[0].mainheading);
         setheading(response.data[0].heading1);

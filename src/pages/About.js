@@ -7,7 +7,7 @@ const About = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getabout");
+      const response = await axios.get("https://api.gradeup01.in/api/getabout");
       setAboutUser(response.data);
     };
 
@@ -37,21 +37,21 @@ const About = () => {
                   <div className="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in" data-aos-duration="1500">
                     <div className="about-img">
                       <img
-                        src={`http://localhost:8005/images/${user.aboutimage1}`}
+                        src={`https://api.gradeup01.in/images/${user.aboutimage1}`}
                       />
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in" data-aos-duration="1800">
                     <div className="about-img">
                       <img
-                        src={`http://localhost:8005/images/${user.aboutimage2}`}
+                        src={`https://api.gradeup01.in/images/${user.aboutimage2}`}
                       />
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12" data-aos="zoom-in" data-aos-duration="2000">
                     <div className="about-img">
                       <img
-                        src={`http://localhost:8005/images/${user.aboutimage3}`}
+                        src={`https://api.gradeup01.in/images/${user.aboutimage3}`}
                       />
                     </div>
                   </div>
@@ -82,7 +82,7 @@ const About = () => {
               <div className="col-lg-4 col-md-4 col-sm-12">
                 <div className="about-section3-img" data-aos="zoom-in" data-aos-duration="1500">
                   <img
-                    src={`http://localhost:8005/images/${user.aboutimage1}`}
+                    src={`https://api.gradeup01.in/images/${user.aboutimage1}`}
                   />
                 </div>
               </div>
@@ -98,7 +98,7 @@ const About = () => {
               <div className="col-lg-4 col-md-4 col-sm-12">
                 <div className="about-mission-img" data-aos="zoom-in" data-aos-duration="1500">
                   <img
-                    src={`http://localhost:8005/images/${user.aboutimage1}`}
+                    src={`https://api.gradeup01.in/images/${user.aboutimage1}`}
                   />
                 </div>
               </div>

@@ -24,7 +24,7 @@ const Service = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getservice");
+      const response = await axios.get("https://api.gradeup01.in/api/getservice");
       setServiceUser(response.data);
     };
 
@@ -39,7 +39,7 @@ const Service = () => {
         return (
           <div className="row service-section1">
             <div className="col-lg-6 col-md-6 col-sm-12 service-section1-img" data-aos="zoom-in" data-aos-duration="1500">
-              <img src={`http://localhost:8005/images/${user.serviceimage}`} />
+              <img src={`https://api.gradeup01.in/images/${user.serviceimage}`} />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 service-section1-para">
               <div className="service-section1-heading">
@@ -70,7 +70,7 @@ const Service = () => {
               <h3>{user.heading}</h3>
               <div className="service-section2-para1-img" data-aos="zoom-in" data-aos-duration="1500">
                 <img
-                  src={`http://localhost:8005/images/${user.serviceimage}`}
+                  src={`https://api.gradeup01.in/images/${user.serviceimage}`}
                 />
               </div>
             </div>
@@ -84,7 +84,7 @@ const Service = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 service-section2-para2">
               <div className="service-section2-para2-img" data-aos="zoom-in" data-aos-duration="1500">
                 <img
-                  src={`http://localhost:8005/images/${user.serviceimage}`}
+                  src={`https://api.gradeup01.in/images/${user.serviceimage}`}
                 />
               </div>
               <h3>{user.heading}</h3>

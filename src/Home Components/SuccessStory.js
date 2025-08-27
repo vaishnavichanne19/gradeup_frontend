@@ -32,7 +32,7 @@ const SuccessStory = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "http://localhost:8005/api/getsuccessstory"
+        "https://api.gradeup01.in/api/getsuccessstory"
       );
       if (response.data.length > 0) {
         setMainHeading(response.data[0].heading);
@@ -57,7 +57,7 @@ const SuccessStory = () => {
             {SuccessStoryUser.map((user, index) => (
               <div key={index} className="success-story-slider-img">
                 <img
-                  src={`http://localhost:8005/images/${user.successstoryimage}`}
+                  src={`https://api.gradeup01.in/images/${user.successstoryimage}`}
                   alt="slider image"
                 />
               </div>

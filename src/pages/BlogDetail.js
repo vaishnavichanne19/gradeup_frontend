@@ -16,7 +16,7 @@ const BlogDetail = () => {
     const BlogDetailData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8005/api/getblogbyid/${id}`
+          `https://api.gradeup01.in/api/getblogbyid/${id}`
         );
         setBlogDetailUser(response.data.data);
       } catch (error) {
@@ -31,7 +31,7 @@ const BlogDetail = () => {
 
 useEffect(() => {
   const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getblog");
+      const response = await axios.get("https://api.gradeup01.in/api/getblog");
       setBlogUser(response.data.slice(1));
       };
 
@@ -57,7 +57,7 @@ fetchData();
                     </ul>
                   </div>
                   <div className="post-img">
-                    <img src={`http://localhost:8005/images/${BlogDetailUser.blogimage}`} alt="" className="img-fluid" />
+                    <img src={`https://api.gradeup01.in/images/${BlogDetailUser.blogimage}`} alt="" className="img-fluid" />
                   </div>
                   {/* End meta top */}
                   <div className="content">

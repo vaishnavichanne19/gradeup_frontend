@@ -13,7 +13,7 @@ const Blog = () => {
 useEffect(() => {
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:8005/api/getblog");
+      const response = await axios.get("https://api.gradeup01.in/api/getblog");
 
       if (response.data.length > 0) {
         setMainHeading(response.data[0].heading);
@@ -63,7 +63,7 @@ const getLimitedHtml = (htmlString, wordLimit) => {
 
         <div className="row blog-section2 spread">
           <div className="col-lg-9 col-md-9 col-sm-12 blog-section2-img">
-            <img src={`http://localhost:8005/images/${MainImage}`} />
+            <img src={`https://api.gradeup01.in/images/${MainImage}`} />
           </div>
           <div className="col-lg-3 col-md-3 col-sm-3 col-3 blog-area blog-section2-span">
             <div className="blog-section2-span1"></div>
@@ -76,7 +76,7 @@ const getLimitedHtml = (htmlString, wordLimit) => {
           {BlogUser.map((user, index) => (
           <div key={index} className="col-lg-4 col-md-4 col-sm-12 blog-section3">
             <div className="blog-section3-img">
-              <img src={`http://localhost:8005/images/${user.blogimage}`} />
+              <img src={`https://api.gradeup01.in/images/${user.blogimage}`} />
             </div>
             <div className="blog-section3-content">
           

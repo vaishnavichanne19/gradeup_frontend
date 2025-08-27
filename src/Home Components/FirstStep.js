@@ -12,7 +12,7 @@ const FirstStep = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "http://localhost:8005/api/getfirststep"
+        "https://api.gradeup01.in/api/getfirststep"
       );
       if (response.data.length > 0) {
         setMainHeading(response.data[0].heading);
@@ -44,7 +44,7 @@ const FirstStep = () => {
             {FirstStepUser.map((user) => {
               return(
                 <span>
-            <img src={`http://localhost:8005/images/${user.firststepimage}`}/>
+            <img src={`https://api.gradeup01.in/images/${user.firststepimage}`}/>
             {/* <img src='img/banner4.jpg'/>
             <img src='img/banner4.jpg'/>
             <img src='img/banner4.jpg'/> */}

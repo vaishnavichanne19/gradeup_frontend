@@ -8,7 +8,7 @@ const Page = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "http://localhost:8005/api/getstartpracticing"
+        "https://api.gradeup01.in/api/getstartpracticing"
       );
       setStartPracticingUser(response.data);
     };
@@ -46,18 +46,18 @@ const Page = () => {
                 <div className="row">
                   <div className="col-lg-8 col-md-8 col-sm-12 para2-img1" data-aos="zoom-in" data-aos-duration="1500">
                     <img
-                      src={`http://localhost:8005/images/${user.startimage1}`}
+                      src={`https://api.gradeup01.in/images/${user.startimage1}`}
                     />
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12">
                     <div className="para2-img2" data-aos="zoom-in" data-aos-duration="1500">
                       <img
-                        src={`http://localhost:8005/images/${user.startimage2}`}
+                        src={`https://api.gradeup01.in/images/${user.startimage2}`}
                       />
                     </div>
                     <div className="para2-img3" data-aos="zoom-in" data-aos-duration="1500">
                       <img
-                        src={`http://localhost:8005/images/${user.startimage3}`}
+                        src={`https://api.gradeup01.in/images/${user.startimage3}`}
                       />
                     </div>
                   </div>

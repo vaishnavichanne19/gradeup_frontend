@@ -10,7 +10,7 @@ const Test = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/gettest");
+      const response = await axios.get("https://api.gradeup01.in/api/gettest");
       setTestUser(response.data);
     };
 
@@ -24,7 +24,7 @@ const Test = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "http://localhost:8005/api/getpracticepdf"
+        "https://api.gradeup01.in/api/getpracticepdf"
       );
       if (response.data.length > 0) {
         setMainHeading(response.data[0].heading);
@@ -42,7 +42,7 @@ const Test = () => {
 
   useEffect(() => {
     const fetchBoardData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getboard");
+      const response = await axios.get("https://api.gradeup01.in/api/getboard");
       setBoardUser(response.data);
       if (response.data.length > 0) {
         setSelectedBoard(response.data[0]._id);
@@ -55,7 +55,7 @@ const Test = () => {
   // Class data
   useEffect(() => {
     const fetchClassData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getclass");
+      const response = await axios.get("https://api.gradeup01.in/api/getclass");
       setClassUser(response.data);
     };
 
@@ -69,7 +69,7 @@ const Test = () => {
 
     useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getexam");
+      const response = await axios.get("https://api.gradeup01.in/api/getexam");
 
       if (response.data.length > 0) {
         setExamMainHeading(response.data[0].heading);
@@ -181,7 +181,7 @@ const Test = () => {
                     <div className="col-lg-1 col-md-1"></div>
                     <div className="col-lg-11 col-md-11" data-aos="zoom-in" data-aos-duration="1500">
                       <img
-                        src={`http://localhost:8005/images/${user.testimage}`}
+                        src={`https://api.gradeup01.in/images/${user.testimage}`}
                       />
                     </div>
                   </div>
@@ -272,7 +272,7 @@ const Test = () => {
                   <i className="fa-regular fa-file-pdf"></i>
                   <h4>
                     <a
-                      href={`http://localhost:8005/files/${user.practicepdf}`}
+                      href={`https://api.gradeup01.in/files/${user.practicepdf}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

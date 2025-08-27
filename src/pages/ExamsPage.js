@@ -16,7 +16,7 @@ const ExamsPage = () => {
 
   useEffect(() => {
     const fetchHeadings = async () => {
-      const response = await axios.get("http://localhost:8005/api/getexam");
+      const response = await axios.get("https://api.gradeup01.in/api/getexam");
       if (response.data.length > 0) {
         setExamMainHeading(response.data[0].heading);
         setExamMainHeading1(response.data[0].heading1);
@@ -28,7 +28,7 @@ const ExamsPage = () => {
   useEffect(() => {
     const fetchSubjects = async () => {
       const subjectRes = await axios.get(
-        `http://localhost:8005/api/getexamsubject/${entranceexamId}`
+        `https://api.gradeup01.in/api/getexamsubject/${entranceexamId}`
       );
       setSubjects(subjectRes.data);
       if (subjectRes.data.length > 0) {
@@ -40,7 +40,7 @@ const ExamsPage = () => {
 
   useEffect(() => {
     const fetchPDFs = async () => {
-      const pdfRes = await axios.get("http://localhost:8005/api/getexampdf");
+      const pdfRes = await axios.get("https://api.gradeup01.in/api/getexampdf");
       setPdfs(pdfRes.data);
     };
     fetchPDFs();
@@ -114,7 +114,7 @@ const ExamsPage = () => {
                   <i className="fa-regular fa-file-pdf"></i>
                   <h4>
                     <a
-                      href={`http://localhost:8005/files/${user.pdfname}`}
+                      href={`https://api.gradeup01.in/files/${user.pdfname}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

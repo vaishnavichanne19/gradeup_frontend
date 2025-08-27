@@ -11,7 +11,7 @@ const Page2 = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "http://localhost:8005/api/getquestionpaper"
+        "https://api.gradeup01.in/api/getquestionpaper"
       );
       if (response.data.length > 0) {
         setMainHeading(response.data[0].heading);
@@ -40,7 +40,7 @@ const Page2 = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-12 page2-img" data-aos="zoom-in" data-aos-duration="1500">
-            <img src={`http://localhost:8005/images/${Image}`} />
+            <img src={`https://api.gradeup01.in/images/${Image}`} />
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Contact = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8005/api/getcontact"
+          "https://api.gradeup01.in/api/getcontact"
         );
         if (response.data.length > 0) {
           setMainHeading(response.data[0].heading);
@@ -68,7 +68,7 @@ const Contact = () => {
 
     try {
       await axios.post(
-        "http://localhost:8005/api/createcontactform",
+        "https://api.gradeup01.in/api/createcontactform",
         ContactForm
       );
       window.location.reload();

@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getchooseus");
+      const response = await axios.get("https://api.gradeup01.in/api/getchooseus");
       if (response.data.length > 0) {
         setmainheading(response.data[0].heading);
         setmainheading1(response.data[0].heading1);

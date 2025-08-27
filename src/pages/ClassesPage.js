@@ -8,7 +8,7 @@ const ClassesPage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/gettest");
+      const response = await axios.get("https://api.gradeup01.in/api/gettest");
       setTestUser(response.data);
     };
 
@@ -25,7 +25,7 @@ const [selectedSubjectId, setSelectedSubjectId] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `http://localhost:8005/api/getsubject/${classId}`
+        `https://api.gradeup01.in/api/getsubject/${classId}`
       );
       setSubjectUser(response.data);
        if (response.data.length > 0) {
@@ -42,7 +42,7 @@ const [selectedSubjectId, setSelectedSubjectId] = useState(null);
   const [PdfUser, setPdfUser] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getpdf");
+      const response = await axios.get("https://api.gradeup01.in/api/getpdf");
       setPdfUser(response.data);
     };
 
@@ -108,7 +108,7 @@ const [selectedSubjectId, setSelectedSubjectId] = useState(null);
   //               <h4>
   //                 {" "}
   //                 <a
-  //                   href={`http://localhost:8005/files/${user.pdfname}`}
+  //                   href={`https://api.gradeup01.in/files/${user.pdfname}`}
   //                   target="_blank"
   //                   rel="noopener noreferrer"
   //                 >
@@ -213,7 +213,7 @@ return (
                   <i className="fa-regular fa-file-pdf"></i>
                   <h4>
                     <a
-                      href={`http://localhost:8005/files/${user.pdfname}`}
+                      href={`https://api.gradeup01.in/files/${user.pdfname}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

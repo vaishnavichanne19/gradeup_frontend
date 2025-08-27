@@ -6,7 +6,7 @@ const Footer = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getFooter");
+      const response = await axios.get("https://api.gradeup01.in/api/getFooter");
       setFooterUser(response.data);
     };
 
@@ -19,7 +19,7 @@ const Footer = () => {
   useEffect(() => {
     const fetchData = async () => {
         const response = await axios.get(
-          "http://localhost:8005/api/getcontact"
+          "https://api.gradeup01.in/api/getcontact"
         );
           setContactUser(response.data);
     };

@@ -7,7 +7,7 @@ const Banner = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getbanner");
+      const response = await axios.get("https://api.gradeup01.in/api/getbanner");
       setBannerUser(response.data);
     };
 
@@ -32,10 +32,10 @@ const Banner = () => {
                 <div className='row'>
                     <div className='col-lg-4 col-md-4 col-sm-12'></div>
                     <div className='col-lg-8 col-md-8 col-sm-12 banner-img'>
-                        <img src={`http://localhost:8005/images/${user.bannerimage1}`}/>
+                        <img src={`https://api.gradeup01.in/images/${user.bannerimage1}`}/>
                     </div>
                      <div className='col-lg-8 col-md-8 col-sm-12 banner-img1'>
-                        <img src={`http://localhost:8005/images/${user.bannerimage2}`}/>
+                        <img src={`https://api.gradeup01.in/images/${user.bannerimage2}`}/>
                      </div>
                       <div className='col-lg-4 col-md-4 col-sm-12'></div>
                 </div>

@@ -7,7 +7,7 @@ const NoCount = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("http://localhost:8005/api/getcount");
+      const response = await axios.get("https://api.gradeup01.in/api/getcount");
       setNoCountUser(response.data);
     };
 
