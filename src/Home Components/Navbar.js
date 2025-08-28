@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="row navbar-section top-nav">
           <div className="col-lg-2 nav-logo">
             <Link to="/">
-            <img src="../img/logo.svg" />
+            <img src="../../img/logo.svg" />
             </Link>
           </div>
           <div className="col-lg-8 nav-page">
@@ -62,7 +62,7 @@ const Navbar = () => {
       <div className="d-lg-none navbar-mobile-view">
         <div className="mobile-view-logo">
           <Link to="/">
-          <img src="img/logo.svg" />
+          <img src="../../img/logo.svg" />
           </Link>
         </div>
         <div

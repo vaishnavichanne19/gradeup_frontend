@@ -103,7 +103,7 @@ const About = () => {
                 </div>
               </div>
               <div className="col-lg-8 col-md-8 col-sm-12 about-mission-area">
-                <div className="about-section3-para about-section3-para-mobileview">
+                <div className="about-section3-para mission-para">
                   <h3 data-aos="fade-down" data-aos-duration="1500">
                     {user.heading}
                     <span> {user.heading1}</span>

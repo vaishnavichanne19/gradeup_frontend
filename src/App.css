@@ -82,7 +82,7 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   h1 {
     font-size: 1.85rem;
   } /* 32px */
@@ -241,17 +241,6 @@ Navbar css start
   width: 160%;
 }
 /* Responsive Styling */
-@media (max-width: 1024px) {
-  .nav-page {
-    width: 80%;
-  }
-  .nav-page ul {
-    font-size: 1rem;
-  }
-  .nav-contact-btn {
-    padding: 0.8em 1.4em;
-  }
-}
 
 @media (min-width: 1441px) {
   .nav-logo {
@@ -267,7 +256,7 @@ Navbar css start
     display: none;
   }
   .navbar-mobile-view {
-    z-index: 1;
+    z-index: 10000;
     background-color: white;
     top: 0;
     width: 100%;
@@ -301,8 +290,6 @@ Navbar css start
     width: 35px;
     height: 35px;
     color: #19191a;
-    border: 1px solid #19191a;
-    border-radius: 2px;
     line-height: 33px;
     text-align: center;
     z-index: 100;
@@ -586,7 +573,7 @@ Banner css start
   object-fit: cover;
 }
 
-@media (max-width: 767px) {
+@media  (max-width: 425px) {
   .banner-section {
     margin-top: 100px;
     padding: 0 20px;
@@ -604,22 +591,6 @@ Banner css start
   .banner-img1 img {
     position: relative;
     top: 20px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .banner-section {
-    margin-top: 120px;
-  }
-  .banner-para h1 {
-    width: 420px;
-    line-height: 45px;
-  }
-  p {
-    margin: 25px 0;
-  }
-  .banner-img1 img {
-    position: relative;
-    bottom: 40px;
   }
 }
 
@@ -721,7 +692,7 @@ Page css start
   width: 160%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .page-section {
     padding: 0 5px;
     margin-top: 60px;
@@ -732,9 +703,10 @@ Page css start
   .page-para2 {
     margin: 50px 0;
   }
+  .page-para2 .para2-img1 {
+  height: 510px;
+}
   .page-para2 .para2-img1 img {
-    width: 100%;
-    height: 100%;
     border-radius: 15px;
   }
   .page-para2 .para2-img2 {
@@ -762,17 +734,7 @@ Page css start
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .page-para2 .para2-img1 img {
-    height: 52vh;
-  }
-  .page-para2 .para2-img2 img {
-    height: 25vh;
-  }
-  .page-para2 .para2-img3 img {
-    height: 25vh;
-  }
-}
+
 /***************************
 Why Choose Us css start
 *****************************/
@@ -798,7 +760,7 @@ Why Choose Us css start
 .chooseus-point span i {
   font-size: 22px;
 }
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .chooseus-para {
     padding: 0;
   }
@@ -808,15 +770,7 @@ Why Choose Us css start
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .chooseus-section {
-    margin: 50px 20px;
-  }
 
-  .chooseus-para .chooseus-point {
-    font-size: 20px;
-  }
-}
 
 /***************************
 Page2 css start
@@ -845,7 +799,7 @@ Page2 css start
   border-top-left-radius: 50%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .page2-section {
     padding: 0 20px;
   }
@@ -858,14 +812,7 @@ Page2 css start
     border-radius: 15px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .page2-area {
-    margin: 0 30px;
-  }
-  .page2-img img {
-    height: 50vh;
-  }
-}
+
 /***************************
 Page3 css start
 *****************************/
@@ -883,8 +830,7 @@ Page3 css start
   border-radius: 15px;
   display: block;
   margin: 0 auto;
-  width: 350px;
-  height: 250px;
+  height: 300px;
 }
 .page3-img img {
   height: 100%;
@@ -902,7 +848,7 @@ Page3 css start
 .page3-para img {
   width: 20%;
 }
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .page3-row {
     padding: 40px 20px;
   }
@@ -917,18 +863,7 @@ Page3 css start
     width: 50%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .page3-row {
-    padding: 50px 20px;
-  }
-  .page3-img img {
-    width: 100%;
-    height: 100%;
-  }
-  .page3-para img {
-    width: 25%;
-  }
-}
+
 @media (min-width: 1367px) and (max-width: 2560px) {
   .page3-para img {
     width: 17%;
@@ -947,7 +882,7 @@ levelup css start
 }
 .levelup-img1 img {
   width: 100%;
-  
+      height: 100%;
   object-fit: cover;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -959,6 +894,7 @@ levelup css start
 }
 .levelup-img2 img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
@@ -971,7 +907,7 @@ levelup css start
 .levelup-para h1 img {
   width: 70%;
 }
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .levelup-img1 img {
     height: 60vh;
     border-radius: 15px;
@@ -985,17 +921,6 @@ levelup css start
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .levelup-img1 img {
-    height: 50vh;
-  }
-  .levelup-img2 img {
-    height: 50vh;
-  }
-  .levelup-para {
-    padding: 0;
-  }
-}
 /***************************
 First Step css start
 *****************************/
@@ -1078,7 +1003,7 @@ First Step css start
   width: 160%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .firststep-area {
     padding: 1rem 0;
   }
@@ -1185,7 +1110,7 @@ FAQS css start
 .faq-last-section button:hover::before {
   width: 160%;
 }
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .faq-top h2 {
     width: 92%;
   }
@@ -1240,7 +1165,7 @@ Success Story css start
   border-radius: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .success-story-area {
     padding: 30px 0 40px 0 !important;
   }
@@ -1294,6 +1219,10 @@ Footer css start
 .footer-icon ul li:hover {
   color: #ed0000;
 }
+.footer-links a{
+  text-decoration: none;
+  color: white;
+}
 .footer-icon ul li i {
   margin-right: 4px;
 }
@@ -1328,7 +1257,7 @@ Footer css start
   white-space: nowrap;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .footer-first-section img {
     width: 50%;
     padding-bottom: 0px;
@@ -1351,7 +1280,7 @@ Footer css start
     letter-spacing: -5px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .footer-follow-links span i {
     margin: 0px 5px;
   }
@@ -1448,7 +1377,7 @@ About css start
   left: 30px;
   z-index: 1;
   width: 300px;
-  height: 440px;
+      height: 440px;
 }
 
 .about-mission-img img {
@@ -1482,7 +1411,7 @@ About css start
 }
 .about-section5-para button {
   color: #ed0000;
-  padding: 0.8em 2.2em;
+  padding: 0.7em 2.2em;
   font-size: 1.2rem;
   font-weight: 600;
   margin: 20px 0 0 0;
@@ -1492,6 +1421,7 @@ About css start
   position: relative;
   transition: all 1s;
   overflow: hidden;
+  z-index: 1;
 }
 .about-section5-para button:hover {
   color: #fff;
@@ -1512,7 +1442,7 @@ About css start
   width: 160%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .about-section {
     margin-top: 130px;
   }
@@ -1523,7 +1453,7 @@ About css start
     padding: 50px 0 10px 0;
   }
   .about-section1 p {
-    width: 80%;
+    width: 89%;
   }
   .about-section2 img {
     margin: 7px 0;
@@ -1539,6 +1469,9 @@ About css start
   .about-section3-para h3 {
     padding: 0;
   }
+  .mission-para {
+          margin-top: 75px;
+}
   .about-section3-img {
     position: relative;
     top: 20px;
@@ -1573,22 +1506,22 @@ About css start
     padding: 70px 0 0 0;
   }
   .about-section5-para {
-    width: 95%;
+    width: 100%;
   }
   .about-img {
     margin-bottom: 20px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .about-section-heading {
     width: 65%;
   }
   .about-section1 p {
-    width: 80%;
+    width: 85%;
   }
   .about-section2 {
-    top: 70px;
+    top: 100px;
   }
   .about-section3-para {
     width: 95%;
@@ -1603,10 +1536,10 @@ About css start
     top: -20px;
   }
   .about-section3-img img {
-    height: 375px;
+            height: 400px;
   }
   .about-mission-img img {
-    height: 375px;
+            height: 400px;
   }
   .about-section5-para {
     width: 85%;
@@ -1746,7 +1679,7 @@ Service css start
   width: 160%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .service-section {
     margin-top: 130px;
     position: relative;
@@ -1787,7 +1720,7 @@ Service css start
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .service-section1 {
     padding: 0 50px 30px 50px;
   }
@@ -1995,7 +1928,7 @@ contact css start
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .contact-section {
     margin-top: 130px;
   }
@@ -2022,7 +1955,7 @@ contact css start
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .contact-form {
     width: 95%;
     padding: 30px 60px;
@@ -2076,7 +2009,7 @@ blog css start
 .blog-section2-img img {
   padding: 0 50px;
   width: 100%;
-object-fit: cover;
+/* object-fit: cover; */
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px;
 }
@@ -2178,7 +2111,7 @@ object-fit: cover;
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .blog-section {
     margin-top: 130px;
   }
@@ -2196,12 +2129,15 @@ object-fit: cover;
     height: 400px;
   }
   .blog-section2-span1 {
-    width: 222px;
+    width: 252px;
     margin-top: 30px;
   }
   .blog-section2-span2 {
-    width: 222px;
+    width: 252px;
   }
+  .blog-section2-span {
+              margin: 0 170px;
+}
   .blog-section3 {
     margin: 20px 0;
   }
@@ -2393,6 +2329,9 @@ test css start
   border-radius: 20px;
   margin: 17px;
 }
+.test-section6-pdfs a {
+  text-decoration: none;
+}
 .test-section6-pdfs-1 {
   padding: 20px 40px;
   display: flex;
@@ -2403,13 +2342,10 @@ test css start
 .test-section6-pdfs-1 i {
   font-size: 40px;
   margin-right: 20px;
-}
-
-.test-section6-pdfs-1 h4 a {
-  text-decoration: none;
   color: #222;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 425px) {
   .test-section {
     margin-top: 130px;
   }
@@ -2474,8 +2410,7 @@ test css start
     margin: 50px 0;
   }
   .test-section4-content {
-    margin: 10px 14px;
-    padding-right: 30px;
+    margin-bottom: 10px;
   }
   .subject-name {
     margin: 10px 15px;
@@ -2508,9 +2443,14 @@ test css start
   .test-section6 {
     margin: 0;
   }
+  .blog-details .post-img {
+    width: 100% !important;
+    height: 250px !important;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .test-section3-para ul {
     margin: 30px 0 0 0;
   }
@@ -2521,7 +2461,7 @@ test css start
     height: 300px;
   }
   .test-section3-img-div2 img {
-    width: 280px;
+   width: 360px;
     height: 300px;
   }
   .test-section4-content {
@@ -2570,7 +2510,7 @@ Class Section css start
   transform: scale(1.3);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .subject-section {
     margin: 0 !important;
   }
@@ -2618,7 +2558,7 @@ Exam Section css start
   border-radius: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 425px) {
   .exam-page {
     margin: 0;
   }
@@ -2794,9 +2734,9 @@ Exam Section css start
 }
 
 .blog-details .post-img {
-  width: 400px;
-  height: 250px;
-  margin: 10px auto;
+     width: 650px;
+    height: 350px;
+    margin: 10px auto;
 }
 .blog-details .post-img img {
   width: 100%;
@@ -2819,4 +2759,175 @@ Exam Section css start
 .post-item h6 a {
   text-decoration: none;
   color: #333;
+}
+
+
+
+/* media query  */
+@media (max-width: 320px) { 
+    .banner-para h1 {
+  width: 290px !important;
+  line-height: 40px !important;
+  }
+  .banner-section {
+    margin-top: 110px !important;
+  }
+.page-para2 .para2-img1 {
+  height: 410px !important;
+margin-bottom: 10px !important;
+}
+    .test-section4-content {
+    margin: 0px !important;
+    margin-bottom: 10px !important;
+    padding-right: 0px !important;
+  }
+  .blog-section2-span {
+    margin: 0 92px !important;
+}
+.blog-details .post-img {
+    width: 100% !important;
+    height: 238px !important;
+    margin: 10px auto;
+}
+.mission-para {
+  margin-top: 200px;
+}
+}
+
+@media (min-width: 426px) and (max-width: 768px) { 
+.banner-para h1 {
+    width: 450px;
+    line-height: 50px;
+}
+.page2-area {
+    margin: 0;
+}
+.page3-row {
+    padding: 30px 20px;
+}
+.page3-img {
+  height: 500px;
+}
+.levelup-img1, .levelup-img2 {
+  height: 300px;
+}
+.levelup-para {
+    margin: auto 0;
+    padding: 0 0px;
+}
+.firststep-area {
+    width: 100%;
+}
+.firststep-right-area {
+    margin: 0 30px 0 50px;
+}
+.footer-bottom-section {
+    height: 141px;
+}
+.footer-title {
+    font-size: 9.9rem;
+}
+.about-section1 p {
+    width: 100%;
+}
+.about-section2 {
+    top: 95px;
+}
+.about-section3-para {
+    width: 90%;
+    padding: 30px 0 30px 0;
+}
+.about-section3-img {
+    z-index: 1;
+    position: absolute;
+    right: 15px;
+    top: -20px;
+    width: 224px;
+    height: 451px;
+}
+.about-mission-img {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    z-index: 1;
+    width: 235px;
+    height: 445px;
+}
+.about-section5-para {
+    width: 90%;
+}
+.service-section1-img {
+    height: 100% !important;
+}
+.test-section3-img-div2 img {
+    width: 274px;
+    height: 271px;
+}
+.test-section4-content {
+  width: 200px;
+}
+.test-section6-pdfs {
+    width: 45%;
+}
+.blog-details .post-img {
+    width: 443px;
+}
+.contact-form {
+    width: 85%;
+    padding: 30px 37px;
+}
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-para h1 {
+    width: 420px;
+    line-height: 45px;
+  }
+  p {
+    margin: 25px 0;
+  }
+  .banner-img1 img {
+    position: relative;
+    bottom: 40px;
+  }
+  .nav-page {
+    width: 80%;
+  }
+  .nav-page ul {
+    font-size: 1rem;
+  }
+  .nav-contact-btn {
+    padding: 0.7em 0.6em !important;
+  }
+    .chooseus-section {
+    margin: 50px 0px;
+  }
+
+  .chooseus-para .chooseus-point {
+    font-size: 20px;
+  }
+    .page2-area {
+    margin: 0 30px;
+  }
+.page3-para {
+    margin: 0;
+    padding: 0 10px;
+}
+.levelup-para {
+   margin: 0 !important;
+}
+.levelup-img1, .levelup-img2 {
+  height: 300px !important;
+}
+.firststep-area {
+    margin: auto;
+    width: 85%;
+}
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+.blog-section2-img {
+    height: 700px;
+}
 }

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const [FooterUser, setFooterUser] = useState([]);
@@ -39,12 +40,22 @@ const Footer = () => {
         </div>
         <div className='col-lg-2 col-md-3 col-sm-6 col-6 footer-links' data-aos="fade-up" data-aos-duration="1700">
             <ul>
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>About</a></li>
-                <li><a>Test</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact Us</a></li>
+              <Link to="/">
+                <li>Home</li>
+                </Link>
+                 <Link to="/about">
+                <li>About</li>
+                </Link>
+                <Link to="/service">
+                <li>Services</li>
+                </Link>
+                 <Link to="/test">
+                <li>Test</li>
+                </Link>
+                <Link to="/blog">
+                <li>Blog</li></Link>
+                 <Link to="/contact">
+                <li>Contact Us</li></Link>
             </ul>
         </div>
         <div className='col-lg-2 col-md-3 col-sm-6 col-6 footer-links' data-aos="fade-up" data-aos-duration="1800">

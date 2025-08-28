@@ -110,20 +110,20 @@ const ExamsPage = () => {
                 key={user._id}
                 className="col-lg-6 col-md-6 col-sm-12 test-section6-pdfs exam-pdfs"
               >
-                <div className="test-section6-pdfs-1">
-                  <i className="fa-regular fa-file-pdf"></i>
-                  <h4>
                     <a
                       href={`https://api.gradeup01.in/files/${user.pdfname}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+                <div className="test-section6-pdfs-1">
+                  <i className="fa-regular fa-file-pdf"></i>
+                  <h4>
                       {user.pdfname
                         ? user.pdfname.replace(/^\d+_/, "")
                         : "Open PDF"}
-                    </a>
                   </h4>
                 </div>
+                    </a>
               </div>
             ))
           ) : (

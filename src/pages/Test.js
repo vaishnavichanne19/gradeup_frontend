@@ -197,7 +197,7 @@ const Test = () => {
           </h2>
           <div className="row">
             {EntranceExams.map((exam) => (
-            <div className="col-lg-2 col-md-2 col-sm-5 col-5 test-section4-content">
+            <div className="col-lg-2 col-md-2 col-sm-6 col-6 test-section4-content">
               <Link to={`/entrance-exam/${exam._id}`} state={{ examname: exam.examname }}>
               <div className="test-section4-detail">
                 <div className="test-section4-data">
@@ -208,39 +208,6 @@ const Test = () => {
               </Link>
             </div>
             ))}
-
-            {/* <div className="col-lg-2 col-md-2 col-sm-5 col-5 test-section4-content">
-              <Link to="/entrance-exam">
-                <div className="test-section4-data">
-                  <span>JEE</span>
-                  <img src="img/doctor.png" />
-                </div>
-              </Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-5 col-5 test-section4-content">
-              <Link to="/entrance-exam">
-                <div className="test-section4-data">
-                  <span>MHT-CET</span>
-                  <img src="img/doctor.png" />
-                </div>
-              </Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-5 col-5 test-section4-content">
-              <Link to="/entrance-exam">
-                <div className="test-section4-data">
-                  <span>NEET</span>
-                  <img src="img/doctor.png" />
-                </div>
-              </Link>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-5 col-5 test-section4-content">
-              <Link to="/entrance-exam">
-                <div className="test-section4-data">
-                  <span>JEE</span>
-                  <img src="img/doctor.png" />
-                </div>
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>
@@ -268,44 +235,23 @@ const Test = () => {
           {PracticepdfUser.map((user) => {
             return (
               <div className="col-lg-6 col-md-6 col-sm-12 test-section6-pdfs">
-                <div className="test-section6-pdfs-1">
-                  <i className="fa-regular fa-file-pdf"></i>
-                  <h4>
                     <a
                       href={`https://api.gradeup01.in/files/${user.practicepdf}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+                <div className="test-section6-pdfs-1">
+                  <i className="fa-regular fa-file-pdf"></i>
+                  <h4>
                       {user.practicepdf
                         ? user.practicepdf.replace(/^\d+_/, "")
                         : "Open PDF"}
-                    </a>
                   </h4>
                 </div>
+                    </a>
               </div>
             );
           })}
-
-          {/* <div className="col-lg-6 col-md-6 col-sm-12 test-section6-pdfs">
-            <div className="test-section6-pdfs-1">
-              <i className="fa-regular fa-file-pdf"></i>
-              <h4>JEE Main 2019</h4>
-            </div>
-          </div>
-
-          <div className="col-lg-6 col-md-6 col-sm-12 test-section6-pdfs">
-            <div className="test-section6-pdfs-1">
-              <i className="fa-regular fa-file-pdf"></i>
-              <h4>JEE Advanced 2019</h4>
-            </div>
-          </div>
-
-          <div className="col-lg-6 col-md-6 col-sm-12 test-section6-pdfs">
-            <div className="test-section6-pdfs-1">
-              <i className="fa-regular fa-file-pdf"></i>
-              <h4>NEET Biology 2019</h4>
-            </div>
-          </div> */}
         </div>
 
         <div className="row faq-last-section-area">

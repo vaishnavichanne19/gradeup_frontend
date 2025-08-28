@@ -209,20 +209,20 @@ return (
           {filteredPdfs.length > 0 ? (
             filteredPdfs.map((user) => (
               <div className="col-lg-6 col-md-6 col-am-12 test-section6-pdfs classpage-pdf">
-                <div className="test-section6-pdfs-1 classpage-pdf-1">
-                  <i className="fa-regular fa-file-pdf"></i>
-                  <h4>
                     <a
                       href={`https://api.gradeup01.in/files/${user.pdfname}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
+                <div className="test-section6-pdfs-1 classpage-pdf-1">
+                  <i className="fa-regular fa-file-pdf"></i>
+                  <h4>
                       {user.pdfname
                         ? user.pdfname.replace(/^\d+_/, "")
                         : "Open PDF"}
-                    </a>
                   </h4>
                 </div>
+                    </a>
               </div>
             ))
           ) : (
