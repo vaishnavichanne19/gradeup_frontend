@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
 
 const BlogDetail = () => {
@@ -39,6 +40,11 @@ fetchData();
 }, []);
 
   return (
+     <>
+           <Helmet>
+               <title>GradeUp – Blog Detail</title>
+            </Helmet>
+
     <div  className="container-fluid blog-section">
         <div className="container">
           <div className="row">
@@ -91,6 +97,7 @@ fetchData();
           </div>
         </div>
     </div>
+    </>
   );
 };
 

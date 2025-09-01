@@ -9,9 +9,14 @@ import FirstStep from './FirstStep'
 import SuccessStory from './SuccessStory'
 import FAQs from './FAQs'
 import NoCount from './NoCount'
+import { Helmet } from 'react-helmet-async'
 
 const HomePages = () => {
   return (
+    <>
+    <Helmet>
+     <title>GradeUp – Online Test Papers & Exam Practice</title>
+     </Helmet>
     <div>
         <Banner/>
     <Page/>
@@ -24,6 +29,7 @@ const HomePages = () => {
     <FAQs/>
     <SuccessStory/>
     </div>
+    </>
   )
 }
 

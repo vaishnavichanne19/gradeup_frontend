@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
   const servicesData = [
@@ -32,6 +33,10 @@ const Service = () => {
   }, []);
 
   return (
+     <>
+           <Helmet>
+               <title>GradeUp – Services</title>
+            </Helmet>
     <div className="container service-section">
       {ServiceUser.filter(
         (user) => user._id === "686cf3f6a33d6c12e690eae9"
@@ -140,6 +145,7 @@ const Service = () => {
         })}
       </div>
     </div>
+    </>
   );
 };
 

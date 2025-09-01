@@ -13,12 +13,14 @@ import ExamsPage from './pages/ExamsPage';
 import BlogDetail from './pages/BlogDetail';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
+import { HelmetProvider } from 'react-helmet-async';
 
 AOS.init();
 
 function App() {
   return (
-  <div>
+    <div>
+    <HelmetProvider>
     <Router>
     <Navbar/>
     <Routes>
@@ -34,6 +36,7 @@ function App() {
     </Routes>
     <Footer/>
   </Router>
+  </HelmetProvider>
   </div>
   );
 }

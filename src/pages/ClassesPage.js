@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useLocation, useParams } from "react-router-dom";
 
 const ClassesPage = () => {
@@ -145,6 +146,10 @@ const [selectedSubjectId, setSelectedSubjectId] = useState(null);
   // );
 
 return (
+   <>
+         <Helmet>
+             <title>GradeUp – Class</title>
+          </Helmet>
   <div className="container test-section">
     {SubjectUser.length === 0 ? (
       <h2 style={{ textAlign: "center", marginTop: "100px", color: "#888" }}>
@@ -249,6 +254,7 @@ return (
       </>
     )}
   </div>
+  </>
 );
 
 };

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
@@ -102,6 +103,10 @@ const Contact = () => {
   };
 
   return (
+     <>
+           <Helmet>
+               <title>GradeUp – Contact</title>
+            </Helmet>
     <div className="container contact-section">
       <h1>
         <span>{MainHeading} </span> {MainHeading1}
@@ -248,6 +253,7 @@ const Contact = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

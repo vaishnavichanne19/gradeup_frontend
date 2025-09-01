@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useLocation, useParams } from "react-router-dom";
 
 const ExamsPage = () => {
@@ -51,6 +52,10 @@ const ExamsPage = () => {
   );
 
   return (
+     <>
+           <Helmet>
+               <title>GradeUp –  Exam</title>
+            </Helmet>
     <div className="container test-section">
           {subjects.length === 0 ? (
       <h2 style={{ textAlign: "center", marginTop: "100px", color: "#888" }}>
@@ -135,6 +140,7 @@ const ExamsPage = () => {
       </div>
     )}
     </div>
+    </>
   );
 };
 

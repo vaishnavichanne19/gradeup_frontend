@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const Blog = () => {
@@ -42,6 +43,11 @@ const getLimitedHtml = (htmlString, wordLimit) => {
 };
 
   return (
+    <>
+       <Helmet>
+           <title>GradeUp – Blog</title>
+        </Helmet>
+   
     <div className="container-fluid blog-section">
       <h1>
        {MainHeading} <span>{MainHeading1}</span>
@@ -93,6 +99,7 @@ const getLimitedHtml = (htmlString, wordLimit) => {
         
       </div>
     </div>
+     </>
   );
 };
 

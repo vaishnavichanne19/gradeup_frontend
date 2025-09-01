@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 
@@ -83,6 +84,10 @@ const Test = () => {
 
 
   return (
+     <>
+           <Helmet>
+               <title>GradeUp – Test</title>
+            </Helmet>
     <div className="container-fluid test-section">
       <div className="container">
         {TestUser.filter((user) => user._id === "6870fa24e8f8aaf83972fc23").map(
@@ -272,6 +277,7 @@ const Test = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
