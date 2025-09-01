@@ -2009,7 +2009,8 @@ blog css start
 .blog-section2-img img {
   padding: 0 50px;
   width: 100%;
-/* object-fit: cover; */
+object-fit: cover;
+object-position: top;
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px;
 }
@@ -2116,33 +2117,46 @@ blog css start
     margin-top: 130px;
   }
   .blog-section1-span1 {
-    width: 55%;
+           width: 45%;
+        height: 28px;
+        margin: 12px 0;
   }
   .blog-section1-span2 {
-    width: 55%;
+           width: 45%;
+        height: 28px;
+        margin: 12px 0;
   }
   .blog-section2-img {
     justify-content: center;
   }
   .blog-section2-img img {
-    padding: 0 0px;
-    height: 400px;
+    padding: 0;
   }
   .blog-section2-span1 {
-    width: 252px;
-    margin-top: 30px;
+          width: 168px;
+          height: 28px;
+          margin: 30px 0 10px 0;
   }
   .blog-section2-span2 {
-    width: 252px;
+     height: 28px;
+       width: 168px;
   }
   .blog-section2-span {
-              margin: 0 170px;
+                     margin: 0 206px;
 }
   .blog-section3 {
     margin: 20px 0;
   }
 }
 
+@media (min-width: 376px) and (max-width: 425px) {
+  .blog-section2-span1 {
+               width: 218px;
+  }
+  .blog-section2-span2 {
+            width: 218px;
+  }
+}
 /***************************
 test css start
 *****************************/
@@ -2782,7 +2796,7 @@ margin-bottom: 10px !important;
     padding-right: 0px !important;
   }
   .blog-section2-span {
-    margin: 0 92px !important;
+           margin: 0 150px !important;
 }
 .blog-details .post-img {
     width: 100% !important;
