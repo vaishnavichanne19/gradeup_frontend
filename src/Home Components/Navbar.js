@@ -103,21 +103,21 @@ const Navbar = () => {
               >
                 <ul>
                   <li className="active">
-                    <a href="/" onClick={() => setIsOpen(false)}>
+                    <Link to="/" onClick={() => setIsOpen(false)}>
                       Home
-                    </a>
+                    </Link>
                     <div className="horizontal-line"></div>
                   </li>
                   <li>
-                    <a href="/about" onClick={() => setIsOpen(false)}>
+                    <Link to="/about" onClick={() => setIsOpen(false)}>
                       About
-                    </a>
+                    </Link>
                     <div className="horizontal-line"></div>
                   </li>
                   <li>
-                    <a href="/service" onClick={() => setIsOpen(false)}>
+                    <Link to="/service" onClick={() => setIsOpen(false)}>
                       Services
-                    </a>
+                    </Link>
                     <div className="horizontal-line"></div>
                   </li>
 
@@ -126,8 +126,8 @@ const Navbar = () => {
                       isDropdownOpen ? "open" : ""
                     }`}
                   >
-                    <a
-                      href="/contact"
+                    <Link
+                      to="/contact"
                       onClick={toggleDropdown}
                       className="dropdown"
                     >
@@ -135,7 +135,7 @@ const Navbar = () => {
                       <span className="arrow">
                         {isDropdownOpen ? "▼" : "▶"}
                       </span>
-                    </a>
+                    </Link>
 
                     <ul className="dropdown-list">
                       <li>Grade1</li>
@@ -146,15 +146,15 @@ const Navbar = () => {
                   </li> */}
 
                       <li>
-                    <a href="/test" onClick={() => setIsOpen(false)}>
+                    <Link to="/test" onClick={() => setIsOpen(false)}>
                       Test
-                    </a>
+                    </Link>
                     <div className="horizontal-line"></div>
                   </li>
                   <li>
-                    <a href="/blog" onClick={() => setIsOpen(false)}>
+                    <Link to="/blog" onClick={() => setIsOpen(false)}>
                       Blog
-                    </a>
+                    </Link>
                     <div className="horizontal-line"></div>
                   </li>
                 </ul>
